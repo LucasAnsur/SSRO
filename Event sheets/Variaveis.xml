@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Variaveis</name>
+    <events>
+        <variable constant="0" name="EventosCompletos" sid="127267435049725" static="0" type="number">0</variable>
+        <variable constant="0" name="ItemObjetivo" sid="470107097962657" static="0" type="text">bagulho</variable>
+    </events>
+</c2eventsheet>

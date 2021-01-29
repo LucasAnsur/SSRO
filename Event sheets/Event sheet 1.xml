@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="977751196566202" title="Movimentação">
+            <sub-events>
+                <event-block sid="247799473519617">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="629964739919281" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="970693565408326" type="Player">
+                            <param id="0" name="X">mouse.X</param>
+                            <param id="1" name="Y">mouse.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="576968960758439">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="293100554286568" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="211429751804445" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="997996894226782">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="914443203788523" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="377512141984603" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="656276608454471">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="301483828661859" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="322862496798639" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="514218993672239">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="700657855918890" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="219446950794822" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="480443222972270" title="Inimigo Torreta Patrulha">
+            <sub-events>
+                <event-block sid="452841984430026">
+                    <conditions>
+                        <condition behavior="Turret" id="1" name="On shoot" sid="550002902041173" type="IniTorMov" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="182926723616176" type="IniTorMov">
+                            <param id="0" name="Object">bala</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="520123431070726">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="121837607610761" type="IniTorMov">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="1" name="Add object to target" sid="832567526319155" type="IniTorMov">
+                            <param id="0" name="Target">Player</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879024947553973">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="263948020395826" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="3" name="Unacquire target" sid="345606772991524" type="IniTorMov" />
+                        <action disabled="1" id="-20" name="Rotate toward angle" sid="435948911302032" type="IniTorMov">
+                            <param id="0" name="Degrees">30</param>
+                            <param id="1" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="708776126172801">
+                    <conditions>
+                        <condition behavior="Turret" id="0" name="Has target" sid="268439270919903" type="IniTorMov" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="451281734849220" type="IniTorMov">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="909947822576844">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="300285294823473" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Sine" id="0" name="Set active" sid="899654820177846" type="IniTorMov">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="630510312145674" title="Inimigo Torreta Fixa">
+            <sub-events>
+                <event-block sid="182692570609737">
+                    <conditions>
+                        <condition behavior="Turret" id="1" name="On shoot" sid="349355919615671" type="IniTorFixa" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="533990183800603" type="IniTorFixa">
+                            <param id="0" name="Object">bala</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="861788998200856">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="157852139099886" type="IniTorFixa">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="1" name="Add object to target" sid="533497238840758" type="IniTorFixa">
+                            <param id="0" name="Target">Player</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="682741619382202">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="611476990569365" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Turret" id="3" name="Unacquire target" sid="120451539928660" type="IniTorFixa" />
+                        <action disabled="1" id="-20" name="Rotate toward angle" sid="597575898883702" type="IniTorFixa">
+                            <param id="0" name="Degrees">30</param>
+                            <param id="1" name="Angle">90</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="164160318752391" title="Inimigo Patrulha e Perseguição">
+            <sub-events>
+                <event-block sid="476413512931640">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="967962194809752" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="5" name="Add obstacle" sid="599764401459597" type="IniPerseguidor">
+                            <param id="0" name="Obstacle">Paredes</param>
+                        </action>
+                        <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="799645229499710" type="IniPerseguidor" />
+                    </actions>
+                </event-block>
+                <event-block sid="653210843202916">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="278638056892951" type="IniPerseguidor">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="810682316138155" type="System">
+                            <param id="0" name="Group name">&quot;Perseguição&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="719972107415911">
+                    <conditions>
+                        <condition behavior="LineOfSight" disabled="1" id="0" inverted="1" name="Has LOS to object" sid="342426024641180" type="IniPerseguidor">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="940380414179446" type="System">
+                            <param id="0" name="Group name">&quot;Perseguição&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" inactive="1" sid="341210128395602" title="Perseguição">
+                    <sub-events>
+                        <event-block sid="868374819551498">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="210167286424766" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="265536735174192" type="IniPerseguidor">
+                                    <param id="0" name="X">Player.X</param>
+                                    <param id="1" name="Y">Player.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="551859712095787">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="210501295619251" type="IniPerseguidor" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="742810018161142" type="IniPerseguidor">
+                                    <param id="0" name="X">Player.X</param>
+                                    <param id="1" name="Y">Player.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="444139176112530">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="677921337359621" type="IniPerseguidor" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="132941185633835" type="IniPerseguidor" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="677311299956432" title="Coleta">
+            <sub-events>
+                <event-block sid="992655225182485">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="299711653538446" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="126422225787139" type="bagulho">
+                            <param id="0" name="Animation">ItemObjetivo</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="425582083841785" type="Player">
+                            <param id="0" name="Instance variable">ItemMissão</param>
+                            <param id="1" name="Value">ItemObjetivo</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="933723126311999">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="140271923434981" type="Player">
+                            <param id="0" name="Object">bagulho</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="388956935157418" type="Player">
+                            <param id="0" name="Instance variable">ItemMissão</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">bagulho.AnimationName</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="402214887389192" type="bagulho" />
+                        <action id="-9" name="Set value" sid="741468290441031" type="System">
+                            <param id="0" name="Variable">ItemObjetivo</param>
+                            <param id="1" name="Value">&quot;bagulho&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="324548318671612" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="289146699630945" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="548687973024719" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="279460722315273" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="749113566898476" type="Notifica">
+                            <param id="0" name="Text">&quot;Item Recuperado!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532664093766602">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="644678415197824" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="283937091077090" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="920173275273974" title="Cidade">
+            <sub-events>
+                <event-group description="" sid="890445361074800" title="Missão Carta">
+                    <sub-events>
+                        <event-block sid="183523932314467">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="698256666245976" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="745892147950156" type="Player">
+                                    <param id="0" name="Object">Transeunte</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="941071989815321" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="908648573826637" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="583402009996421" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="716390263552872" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="961782904476664" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="330415569514092" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;carta&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="330508376598908" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;carta&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="256257656234584" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="582232784829720" title="Missão Fotos">
+                    <sub-events>
+                        <event-block sid="857488151669823">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="978315655114284" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="231748269394290" type="Player">
+                                    <param id="0" name="Object">Transeunte</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="846891391791917" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="563886913889827" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere a pistola do meu pai que foi roubada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="800530185304647" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="311381240178729" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="438927936115425" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="821367238801935" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;fotos&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="388624773556156" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;fotos&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="972580229137784" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="775413128121543" title="Missão Relogio">
+                    <sub-events>
+                        <event-block sid="314898688563333">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="278594248051860" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="541344268545383" type="Player">
+                                    <param id="0" name="Object">Cidadão</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="954145639777593" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="952196982396345" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu relogio de ouro que é uma herança de familia e foi furtada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="693558920218919" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="936925453710049" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="855922186946461" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="177483880576383" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;relogio&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="779416540938231" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;relogio&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="641610458182990" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="979848091001749" title="Missão Chapeu">
+                    <sub-events>
+                        <event-block sid="949779152076594">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="718201847342315" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="944551724127849" type="Player">
+                                    <param id="0" name="Object">Cidadão</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="674872104519433" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="230064481714725" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="868063051593649" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="890448374758707" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="179634496822590" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="265316703361425" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;chapeu&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="809465159365571" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;chapeu&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="114162189750931" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="585069966027076" title="Missão Botoes">
+                    <sub-events>
+                        <event-block sid="997275858261919">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="159403999053345" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="848818379438925" type="Player">
+                                    <param id="0" name="Object">Civil</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="214587016760419" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="520799260954499" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="780336634753129" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="785306771698641" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="832707887999652" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="218054561136627" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;botoes&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="353904205681419" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;botoes&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="945090293744998" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="801556437794205" title="Missão Novelo">
+                    <sub-events>
+                        <event-block sid="926133887441091">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="697782076210251" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="378722952887705" type="Player">
+                                    <param id="0" name="Object">Civil</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="948292935155653" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="177559063679355" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="900389846920980" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="302819339776340" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="511509237751911" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="727942792778342" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;novelo&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="211138026637964" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;novelo&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="585185109099330" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="524380188792283" title="Missão Joias">
+                    <sub-events>
+                        <event-block sid="889031020717382">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="579994425283337" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="374645146864857" type="Player">
+                                    <param id="0" name="Object">Xerife</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="662805373309884" type="System">
+                                    <param id="0" name="Variable">EventosCompletos</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="676276659776505" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="845200254587163" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="441729875812840" type="System">
+                                    <param id="0" name="Seconds">5</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="595979370462521" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="202719425986352" type="Player">
+                                    <param id="0" name="Instance variable">ItemMissão</param>
+                                    <param id="1" name="Value">&quot;joias&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="950828077151554" type="System">
+                                    <param id="0" name="Variable">ItemObjetivo</param>
+                                    <param id="1" name="Value">&quot;joias&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="286074062663959" type="Notifica">
+                                    <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="761802599667038">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="739525755981337" type="Player">
+                            <param id="0" name="Object">CaminhoCidade</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="846553569260710" type="System">
+                            <param id="0" name="Layout">Cidade</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="747865028878406">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="265230672441261" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="723429617853692" type="Player">
+                            <param id="0" name="Object">Carroça</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="216760375487972" type="System">
+                            <param id="0" name="Variable">ItemObjetivo</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;bagulho&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="769732113455342" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Vamos então patrão!&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="121679224282456" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="779357702760426" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="335647848023275" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="695626478480064" type="System">
+                            <param id="0" name="Layout">ItemObjetivo</param>
+                        </action>
+                        <action id="0" name="Set text" sid="737080237530549" type="Notifica">
+                            <param id="0" name="Text">&quot;Recupere o item!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="894124008843669" title="Menu Inicial">
+            <sub-events>
+                <event-block disabled="1" sid="930569642110606">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="750012270248114" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Pause_BTN</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block disabled="1" sid="425751411527565">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="428281707944432" type="Pause_BTN">
+                                    <param id="0" name="Instance variable">Pause</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set time scale" sid="859302749581917" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="440570982562232" type="Pause_BTN">
+                                    <param id="0" name="Instance variable">Pause</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="738382368396992">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="581101894679458" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set time scale" sid="944506488094834" type="System">
+                                    <param id="0" name="Time scale">1</param>
+                                </action>
+                                <action id="-14" name="Toggle boolean" sid="490576727872226" type="Pause_BTN">
+                                    <param id="0" name="Instance variable">Pause</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="524938639487505">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="946956631967391" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">btn_Start</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="823829310867309" type="System">
+                            <param id="0" name="Layout">Cidade</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="609607435340371" title="Morte">
+            <sub-events>
+                <event-block sid="290185441085171">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="439748504101426" type="bala">
+                            <param id="0" name="Object">Paredes</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="778347632302095" type="bala" />
+                    </actions>
+                </event-block>
+                <event-block sid="348890633570744">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="324234150274482" type="bala">
+                            <param id="0" name="Object">IniPerseguidor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="596471042236789" type="bala" />
+                        <action id="-9" name="Destroy" sid="379769453605174" type="IniPerseguidor" />
+                    </actions>
+                </event-block>
+                <event-block sid="715267226406218">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="423806494534403" type="MORTE">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="910019641361973" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="307432182094831" type="System">
+                            <param id="0" name="Layout">Start Menu</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="899707206047932" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="190764568116718">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="838337740778848" type="Player">
+                            <param id="0" name="Object">bala</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="238119527395315" type="Player">
+                            <param id="0" name="Instance variable">morreu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="157354004935103" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="510660480591015" type="bala" />
+                    </actions>
+                </event-block>
+                <event-block sid="453766558698804">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="957452559201897" type="Player">
+                            <param id="0" name="Object">IniPerseguidor</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="285660931845226" type="Player">
+                            <param id="0" name="Instance variable">morreu</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="824524608295433" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="117183597435420">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="710567608120183" type="Player">
+                            <param id="0" name="Instance variable">morreu</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="173523100409603">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="385941534093971" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="643981648373752" type="MORTE">
+                                    <param id="0" name="Opacity">MORTE.Opacity+10</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="841073366848349" type="TextoMorte">
+                                    <param id="0" name="Opacity">TextoMorte.Opacity+10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="366557113114961" title="Sistema">
+            <sub-events>
+                <event-block sid="747775345899246">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="409706240024469" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="171035406999964" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="728138420668310">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="603664733080477" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="365514353582167" type="ItensMapa">
+                            <param id="0" name="Frame number">random(0,10)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

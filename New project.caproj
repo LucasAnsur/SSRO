@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>10uskvqfzcz5q</unique-id>
+    <saved-with-version>27900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BG" sid="813479785339216">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Player" sid="899595179961740">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ItemMissão" sid="550939176930731" type="string" />
+                <instance-variable name="morreu" sid="125676566527838" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="573013454032975">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="289665851715506">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="501968238547080">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355958036298349" speed="5">
+                    <frame duration="1" hotspotX="1.01667" hotspotY="0.466667" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="242491453000252">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="404223542717906">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="IniTorMov" sid="932106828435403">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="889970007183047">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="354956046239581">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="663013917985638">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593686020240093" speed="5">
+                    <frame duration="1" hotspotX="0.96875" hotspotY="0.491228" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Muro" sid="255392612154599">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="778395541971234">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707774307992659" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IniTorFixa" sid="114338959972835">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="338615228394530">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Turret" sid="157201437808377">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="805248612175528" speed="5">
+                    <frame duration="1" hotspotX="0.967742" hotspotY="0.492063">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IniPerseguidor" sid="176668524097857">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pathfinding" sid="131060179246149">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="864357358068109">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790832375257429" speed="5">
+                    <frame duration="1" hotspotX="0.982456" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bagulho" sid="418243308850784">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="bagulho" pingpong="0" repeatcount="1" repeatto="0" sid="547325166793207" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="carta" pingpong="0" repeatcount="1" repeatto="0" sid="343605762529317" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="fotos" pingpong="0" repeatcount="1" repeatto="0" sid="228378673752207" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="relogio" pingpong="0" repeatcount="1" repeatto="0" sid="397835402945196" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="chapeu" pingpong="0" repeatcount="1" repeatto="0" sid="254705266338330" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="botoes" pingpong="0" repeatcount="1" repeatto="0" sid="468101296386972" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="novelo" pingpong="0" repeatcount="1" repeatto="0" sid="302408002269901" speed="5">
+                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                </animation>
+                <animation framecount="1" loop="0" name="joias" pingpong="0" repeatcount="1" repeatto="0" sid="477095856921750" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MsgINFO" sid="744412497556989">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="FundoTexto" sid="888501049609834">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952438486232822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Transeunte" sid="452842582979012">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="missão" sid="521323369962718" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228521688823756" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Carroça" sid="988708613126536">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489002657349194" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Notifica" sid="495642864790496">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btn_Start" sid="398902538180662">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160775931053248" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pause_BTN" sid="661905403405779">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Pause" sid="647203771533708" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641652189879382" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bala" sid="119255097741292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="803712156834183">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406948626151754" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MORTE" sid="507106312739160">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379851802160321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoMorte" sid="708293976408583">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Civil" sid="612272687530866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453519027201292" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cidadão" sid="613281349537297">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502552894371636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Xerife" sid="894129049592851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712492766452958" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaminhoCidade" sid="134922308949426">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455015677417580" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arvore" sid="732603348087754">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="974512060513435" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500745" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Tree (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500914" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Tree (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pedra" sid="392134679984275">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400202476563286" speed="0">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.472222" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Rock (1).png" />
+                    <frame duration="1" hotspotX="0.475207" hotspotY="0.53913" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Rock (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Barril" sid="212776453501812">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159234691819439" speed="0">
+                    <frame duration="1" hotspotX="0.473684" hotspotY="0.48996" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Barrel (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.493976" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Barrel (2).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ossos" sid="516802215783500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="828623010503843" speed="0">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.493827" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Bones (1).png" />
+                    <frame duration="1" hotspotX="0.491803" hotspotY="0.480916" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Bones (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502793" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Bones (3).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cacto" sid="837626309494758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787384409586548" speed="0">
+                    <frame duration="1" hotspotX="0.477477" hotspotY="0.496" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Cactus (1).png" />
+                    <frame duration="1" hotspotX="0.474178" hotspotY="0.493976" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Cactus (2).png" />
+                    <frame duration="1" hotspotX="0.493421" hotspotY="0.162393" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Cactus (3).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Caixa" sid="974100469839651">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="123986640919757" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.491736" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Crate.png">
+                        <collision-poly>
+                            <point x="0.106481" y="0.140496" />
+                            <point x="0.5" y="0.00413223" />
+                            <point x="0.888889" y="0.144628" />
+                            <point x="0.902778" y="0.491736" />
+                            <point x="0.856481" y="0.809917" />
+                            <point x="0.5" y="0.867769" />
+                            <point x="0.143519" y="0.809917" />
+                            <point x="0.087963" y="0.491736" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plantas" sid="852576427545034">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824815380164038" speed="0">
+                    <frame duration="1" hotspotX="0.518692" hotspotY="0.475771" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (1).png" />
+                    <frame duration="1" hotspotX="0.455357" hotspotY="0.46798" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (2).png" />
+                    <frame duration="1" hotspotX="0.518692" hotspotY="0.475771" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (3).png" />
+                    <frame duration="1" hotspotX="0.455357" hotspotY="0.46798" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (4).png" />
+                    <frame duration="1" hotspotX="0.488095" hotspotY="0.579268" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (5).png" />
+                    <frame duration="1" hotspotX="0.473054" hotspotY="0.579268" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (6).png" />
+                    <frame duration="1" hotspotX="0.483871" hotspotY="0.493151" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (7).png" />
+                    <frame duration="1" hotspotX="0.446009" hotspotY="0.425532" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Plants (8).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placas" sid="500021533152288">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226375499956041" speed="0">
+                    <frame duration="1" hotspotX="0.475" hotspotY="0.612676" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Sign (3).png" />
+                    <frame duration="1" hotspotX="0.330508" hotspotY="0.601399" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Sign (4).png" />
+                    <frame duration="1" hotspotX="0.443478" hotspotY="0.521127" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Sign (5).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TBG1" sid="161705541485192">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (2).png" />
+        </object-type>
+        <object-type name="TiledBackground" sid="563329783708679">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (1).png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="913960294468688">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (3).png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="136066594180907">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (4).png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="680907119648444">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (5).png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="348092668323768">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (6).png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="228790727124961">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (7).png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="348607362066374">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (8).png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="810369056158361">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (9).png" />
+        </object-type>
+        <object-type name="TiledBackground9" sid="349614376892229">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (10).png" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="349693065721557">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (11).png" />
+        </object-type>
+        <object-type name="TiledBackground11" sid="540807130771537">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (12).png" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="266801674776019">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (13).png" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="929727084618319">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (14).png" />
+        </object-type>
+        <object-type name="TiledBackground14" sid="308660248810809">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (15).png" />
+        </object-type>
+        <object-type name="TiledBackground15" sid="149453500911382">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (16).png" />
+        </object-type>
+        <object-type name="TiledBackground16" sid="435328164785312">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (17).png" />
+        </object-type>
+        <object-type name="TiledBackground17" sid="797070278613962">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (18).png" />
+        </object-type>
+        <object-type name="TiledBackground18" sid="952099866168074">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (19).png" />
+        </object-type>
+        <object-type name="TiledBackground19" sid="162659066753533">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (20).png" />
+        </object-type>
+        <object-type name="TiledBackground20" sid="881476551661654">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (21).png" />
+        </object-type>
+        <object-type name="TiledBackground21" sid="479397617855860">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (22).png" />
+        </object-type>
+        <object-type name="TiledBackground22" sid="459316600758148">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (23).png" />
+        </object-type>
+        <object-type name="TiledBackground23" sid="480106932711492">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (24).png" />
+        </object-type>
+        <object-type name="TiledBackground24" sid="954433808013158">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (25).png" />
+        </object-type>
+        <object-type name="TiledBackground25" sid="442120008289291">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (26).png" />
+        </object-type>
+        <object-type name="TiledBackground26" sid="933552437744778">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (27).png" />
+        </object-type>
+        <object-type name="TiledBackground27" sid="483196486245186">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (28).png" />
+        </object-type>
+        <object-type name="TiledBackground28" sid="987287615241376">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (29).png" />
+        </object-type>
+        <object-type name="TiledBackground29" sid="997904413097741">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (30).png" />
+        </object-type>
+        <object-type name="TiledBackground30" sid="724602176298390">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (31).png" />
+        </object-type>
+        <object-type name="TiledBackground31" sid="743884045907464">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (32).png" />
+        </object-type>
+        <object-type name="TiledBackground32" sid="817873290249268">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (33).png" />
+        </object-type>
+        <object-type name="TiledBackground33" sid="267346769921066">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (34).png" />
+        </object-type>
+        <object-type name="TiledBackground34" sid="845801837468146">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (35).png" />
+        </object-type>
+        <object-type name="TiledBackground35" sid="945249474083691">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (36).png" />
+        </object-type>
+        <object-type name="TiledBackground36" sid="593732854127262">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (37).png" />
+        </object-type>
+        <object-type name="TiledBackground37" sid="969905338969343">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (38).png" />
+        </object-type>
+        <object-type name="TiledBackground38" sid="942347082919131">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (39).png" />
+        </object-type>
+        <object-type name="TiledBackground39" sid="678132608901120">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Tile (39).png" />
+        </object-type>
+        <object-type name="TiledBackground40" sid="516782071829395">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground41" sid="128784130156430">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Bridge\Horizontal (4).png" />
+        </object-type>
+        <object-type name="TiledBackground42" sid="683512699326202">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Bridge\Horizontal (8).png" />
+        </object-type>
+        <object-type name="TiledBackground43" sid="913563485110035">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Bridge\Horizontal (2).png" />
+        </object-type>
+        <object-type name="TiledBackground44" sid="959500007883241">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Lucas\Desktop\JAM\png\256\Tiles\Bridge\Horizontal (1).png" />
+        </object-type>
+        <object-type name="paredeinvi" sid="184344776839886">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="790226911363248">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104420411410330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="EsquerdaPlaca" sid="402369712088729">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769758787044917" speed="5">
+                    <frame duration="1" hotspotX="0.690476" hotspotY="0.484375" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Sign (1).png">
+                        <collision-poly>
+                            <point x="0.31746" y="0.117188" />
+                            <point x="0.690476" y="0.03125" />
+                            <point x="0.944444" y="0.234375" />
+                            <point x="0.952381" y="0.476563" />
+                            <point x="0.801587" y="0.585938" />
+                            <point x="0.690476" y="0.945313" />
+                            <point x="0.531746" y="0.632813" />
+                            <point x="0.261905" y="0.476563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DireitaPlaca" sid="712207966239338">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631176299773339" speed="5">
+                    <frame duration="1" hotspotX="0.417323" hotspotY="0.453125" original-source="C:\Users\Lucas\Desktop\JAM\png\256\Objects\Sign (2).png">
+                        <collision-poly>
+                            <point x="0.15748" y="0.195313" />
+                            <point x="0.417323" y="0.015625" />
+                            <point x="0.755906" y="0.117188" />
+                            <point x="0.740157" y="0.453125" />
+                            <point x="0.472441" y="0.507813" />
+                            <point x="0.417323" y="0.960938" />
+                            <point x="0.291339" y="0.578125" />
+                            <point x="0.0393701" y="0.453125" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Paredes" plugin-id="Sprite" sid="148150697291125">
+            <members>
+                <member>Muro</member>
+            </members>
+        </family>
+        <family name="Inimigos" plugin-id="Sprite" sid="893710038155079">
+            <members>
+                <member>IniPerseguidor</member>
+                <member>IniTorFixa</member>
+                <member>IniTorMov</member>
+            </members>
+        </family>
+        <family name="ItensMapa" plugin-id="Sprite" sid="890631663629625">
+            <members>
+                <member>Arvore</member>
+                <member>Barril</member>
+                <member>Cacto</member>
+                <member>Caixa</member>
+                <member>Ossos</member>
+                <member>Pedra</member>
+                <member>placas</member>
+                <member>plantas</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="348400802468103">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>BandindinTeste.xml</layout>
+        <layout>AdiçãoSprite.xml</layout>
+        <layout>Start Menu.xml</layout>
+        <layout>Cidade.xml</layout>
+        <layout>carta.xml</layout>
+        <layout>fotos.xml</layout>
+        <layout>relogio.xml</layout>
+        <layout>chapeu.xml</layout>
+        <layout>botoes.xml</layout>
+        <layout>novelo.xml</layout>
+        <layout>joias.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Variaveis.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
