@@ -6,7 +6,7 @@ Jogo desenvolvido no Construct 2 para a Global Game Jam 2021
 
 [Leticia R. Gonçalves](https://github.com/laetit) - Roteirista, Game Designer
 
-[Lucas F. F. Silva](https://github.com/LucasAnsur/SSRO.git) - Programador, Game Designer
+[Lucas F. F. Silva](https://github.com/LucasAnsur) - Programador, Game Designer
 
 ## Classificação
 
