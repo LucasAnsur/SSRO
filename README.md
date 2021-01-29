@@ -44,6 +44,8 @@ Os bandidos que atrapalham o jogador a obter os itens perdidos são o maior obst
 * Os novatos, estão sempre atentos mas com medo, ao ver o personagem correndo para cima dele, já que não tem armas para atirar e são tomados pela adrenalina.
 
 
-## Licensa
+## Licença
 
-[MIT](https://github.com/LucasAnsur/SSRO/blob/master/LICENSE)
+![CC](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
