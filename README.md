@@ -47,6 +47,19 @@ Os bandidos que atrapalham o jogador a obter os itens perdidos são o maior obst
 * Os dorminhocos, ficam em algum canto tentando cochilar, se veem o inimigo atira no personagem para assustar mas se recusam a ir atrás, se o personagem se afasta deles só retornam a dormir.
 * Os novatos, estão sempre atentos mas com medo, ao ver o personagem correndo para cima dele, já que não tem armas para atirar e são tomados pela adrenalina.
 
+## Crédito
+
+Design de personagens e casas por [Thasso](https://www.linkedin.com/in/tha%C3%ADs-ferreira-torres-153a65155/)
+
+Elementos de cenário (tiles e objects) por [pzUH](https://graphicriver.net/user/pzuh)
+
+Borda vetor em menu criado por [macrovector](br.freepik.com)
+
+UI criado por [Lynda Mc Donald](https://lyndamcdonald.com/)
+
+Música de fundo de menu e cidade Barnyard Ball por [Troisnyx](https://troisnyx.newgrounds.com/)
+
+_Obs. Restante dos elementos de cenário que não se encaixam nesse fazem parte do pacote gratuito do construct._
 
 ## Licença
 
