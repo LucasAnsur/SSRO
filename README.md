@@ -28,8 +28,12 @@ Severino passou muitos anos sonhando em sair de sua cidade, mas seu vínculo com
 
 ## Gameplay
 
-O jogador pode controlar Severino durante o jogo, inicialmente na cidade é possível interagir com os npcs e pegar missões de resgate de itens perdidos, ao concluir uma dessas missões é possível pegar mais e seguir com a história.
-O jogador encontrará inimigos e terá que desviar deles para encontrar o objeto perdido e retornar a cidade.
+O jogador controla Severino, o jogo se inicia em uma pequena cidade com npcs que seriam seus habitantes, é possível andar para utilizando _WASD_, inclusive mais de um ao mesmo tempo assim podendo andar para as diagonais e interagir com os npcs utilizando o _espaço_.
+<br>
+Ao interagir com os npcs um diálogo acontecerá, podendo ser um pedido de recuperação de objeto ou um diálogo comum, Após conseguir um diálogo de recuperação de item o jogador consegue uma nova interação com a carroça que o levará para outro mapa onde terão inimigos.
+<br>
+O jogador não pode atacar, então deve desviar dos tiros de seus inimigos e deles mesmo em caso de perseguição, se for pego por um tiro ou inimigo, instantaneamente o jogo irá reiniciar zerando as missões já feitas e assim todo avanço do jogo.
+
 
 ## Mundo do Jogo
 
@@ -46,6 +50,6 @@ Os bandidos que atrapalham o jogador a obter os itens perdidos são o maior obst
 
 ## Licença
 
-![CC](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+![CC](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
