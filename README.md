@@ -53,7 +53,7 @@ Design de personagens e casas por [Thasso](https://www.linkedin.com/in/tha%C3%AD
 
 Elementos de cenário (tiles e objects) por [pzUH](https://graphicriver.net/user/pzuh)
 
-Borda vetor em menu criado por [macrovector](br.freepik.com)
+Borda vetor em menu criado por [macrovector](https://br.freepik.com)
 
 UI criado por [Lynda Mc Donald](https://lyndamcdonald.com/)
 
