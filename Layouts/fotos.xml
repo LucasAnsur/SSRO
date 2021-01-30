@@ -1356,8 +1356,8 @@
                 <instance type="MsgINFO" uid="164">
                     <properties>
                         <text>ITEM ENCONTRADO</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-16,400,0</font>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-19,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -1368,8 +1368,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>20</x>
-                        <y>320</y>
+                        <x>10</x>
+                        <y>8</y>
                         <z>0</z>
                         <width>810</width>
                         <height>138</height>

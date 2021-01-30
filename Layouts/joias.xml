@@ -1163,8 +1163,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3061</x>
-                        <y>989</y>
+                        <x>3178</x>
+                        <y>1014</y>
                         <z>0</z>
                         <width>129</width>
                         <height>120</height>
@@ -1705,8 +1705,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>239</x>
-                        <y>769</y>
+                        <x>2860</x>
+                        <y>996</y>
                         <z>0</z>
                         <width>60</width>
                         <height>60</height>
@@ -1735,6 +1735,28 @@
                         <depth>0</depth>
                         <hotspotX>0.417322844</hotspotX>
                         <hotspotY>0.453125</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="488">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3069</x>
+                        <y>989</y>
+                        <z>0</z>
+                        <width>250</width>
+                        <height>250</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

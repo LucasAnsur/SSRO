@@ -78,6 +78,12 @@
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="Image point">0</param>
                         </action>
+                        <action id="0" name="Play" sid="491521722112976" type="Audio">
+                            <param id="0" name="Audio file">Tiro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="520123431070726">
@@ -137,6 +143,12 @@
                             <param id="0" name="Object">bala</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="389488740088814" type="Audio">
+                            <param id="0" name="Audio file">Tiro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -281,17 +293,6 @@
                             <param id="0" name="Variable">EventosCompletos</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="289146699630945" type="System">
-                            <param id="0" name="Layer">2</param>
-                            <param id="1" name="Visibility">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="548687973024719" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="279460722315273" type="System">
-                            <param id="0" name="Layer">2</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
                         <action id="0" name="Set text" sid="749113566898476" type="Notifica">
                             <param id="0" name="Text">&quot;Item Recuperado!&quot;</param>
                         </action>
@@ -320,7 +321,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="745892147950156" type="Player">
-                                    <param id="0" name="Object">Transeunte</param>
+                                    <param id="0" name="Object">Ales</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="941071989815321" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -329,15 +330,25 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="298624490102296" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="908648573826637" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;Meu menino me enviô uma carta di aniversario e ainda nem li! Teve uma fia uns tempo desse, nem me falo sobre ela, quero tanto conhecer minha neta.&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="583402009996421" type="System">
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="716390263552872" type="System">
-                                    <param id="0" name="Seconds">5</param>
+                                    <param id="0" name="Seconds">3</param>
+                                </action>
+                                <action id="0" name="Set text" sid="265817060190810" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Meu fio sempre coloco dinheiro no envelope, os bandido mizeravi pego ela por isso eu sei. Vá pega ela pra mim&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="286699869805377" type="System">
+                                    <param id="0" name="Seconds">3</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="961782904476664" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -350,6 +361,10 @@
                                 <action id="-9" name="Set value" sid="330508376598908" type="System">
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;carta&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="265990216728988" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="256257656234584" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
@@ -366,7 +381,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="231748269394290" type="Player">
-                                    <param id="0" name="Object">Transeunte</param>
+                                    <param id="0" name="Object">Ales</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="846891391791917" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -375,8 +390,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="663442022076057" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="563886913889827" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere a pistola do meu pai que foi roubada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;... Não é carta de aniversario, é dispedida. Meu fio já não vorta mais. Vá te busca meu album de fotografia, perdi mas preciso dele, sei qui ta cum os bandido! Oce tem qui acha!&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="800530185304647" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -397,6 +416,10 @@
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;fotos&quot;</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="289216444184497" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="972580229137784" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
                                 </action>
@@ -412,7 +435,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="541344268545383" type="Player">
-                                    <param id="0" name="Object">Cidadão</param>
+                                    <param id="0" name="Object">Lyara</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="954145639777593" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -421,8 +444,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="907189530129391" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="952196982396345" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu relogio de ouro que é uma herança de familia e foi furtada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;Essi demonio. Me trai dessi jeito, queria te queimadu mais ropa dessi demonio. Falto aquela mardita aliança. Oce ai, fazeno favor prus otros! Ache o relogio desse mizeravi daquele imbusti&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="693558920218919" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -443,6 +470,10 @@
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;relogio&quot;</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="917682872855072" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="641610458182990" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
                                 </action>
@@ -458,7 +489,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="944551724127849" type="Player">
-                                    <param id="0" name="Object">Cidadão</param>
+                                    <param id="0" name="Object">Lyara</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="674872104519433" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -467,8 +498,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="796185163444167" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="230064481714725" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;Essi chero de defunto... So farta o chapeu. Num mi olhe assim, não quero te que olha nos zói dele naquele caixão...&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="868063051593649" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -489,6 +524,10 @@
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;chapeu&quot;</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="205975268529508" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="114162189750931" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
                                 </action>
@@ -504,7 +543,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="848818379438925" type="Player">
-                                    <param id="0" name="Object">Civil</param>
+                                    <param id="0" name="Object">Adélia</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="214587016760419" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -513,8 +552,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="191545929489884" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="520799260954499" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;Oce ta fazeno favor prus otros por uns trocadin ne? Ora ora, pois venha cá e ache minha caixa de botões, to precisano termina a camisa do Ales! É pa de manhã. Ache pur favo.&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="780336634753129" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -535,6 +578,10 @@
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;botoes&quot;</param>
                                 </action>
+                                <action id="-12" name="Set group active" sid="536461309429496" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
                                 <action id="0" name="Set text" sid="945090293744998" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
                                 </action>
@@ -550,7 +597,7 @@
                                     <param id="0" name="Key">32</param>
                                 </condition>
                                 <condition id="1" name="Is overlapping another object" sid="378722952887705" type="Player">
-                                    <param id="0" name="Object">Civil</param>
+                                    <param id="0" name="Object">Adélia</param>
                                 </condition>
                                 <condition id="-14" name="Compare variable" sid="948292935155653" type="System">
                                     <param id="0" name="Variable">EventosCompletos</param>
@@ -559,8 +606,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-12" name="Set group active" sid="503971979765525" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="177559063679355" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                    <param id="0" name="Text">&quot;Oce conseguiu!!! Ah meu minimo mui obirgada, mai tenho que te pedi otro achado. Perdi até minha linha, num acho em lugar ninhum, é linha amarela os ladrão cunfundiu cum de oro eu sei!&quot;</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="900389846920980" type="System">
                                     <param id="0" name="Layer">2</param>
@@ -580,6 +631,10 @@
                                 <action id="-9" name="Set value" sid="211138026637964" type="System">
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;novelo&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="559905368637991" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="585185109099330" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
@@ -605,19 +660,25 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Set text" sid="676276659776505" type="MsgINFO">
-                                    <param id="0" name="Text">&quot;Por favor, preciso que recupere meu colar que foi surrupiada por aqueles bandidos!&quot;</param>
+                                <action id="-12" name="Set group active" sid="933982014121989" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">0</param>
                                 </action>
-                                <action id="-4" name="Set layer visible" sid="845200254587163" type="System">
+                                <action id="0" name="Set text" sid="185320114472616" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Dia Severino, tua mãe deixo algo pah ti. Orvi dize que oce ta tentano sai da cidade e isso pode ajuda. Mai sinto dize que ta em uma caixa qui os bandidin pegaram de minha casa...&quot; </param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="503852578286882" type="System">
                                     <param id="0" name="Layer">2</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
-                                <action id="-16" name="Wait" sid="441729875812840" type="System">
-                                    <param id="0" name="Seconds">5</param>
+                                <action id="-16" name="Wait" sid="271781805872613" type="System">
+                                    <param id="0" name="Seconds">3</param>
                                 </action>
-                                <action id="-4" name="Set layer visible" sid="595979370462521" type="System">
-                                    <param id="0" name="Layer">2</param>
-                                    <param id="1" name="Visibility">0</param>
+                                <action id="0" name="Set text" sid="673215259122772" type="MsgINFO">
+                                    <param id="0" name="Text">&quot;Vai se dificil, mas poderia pega pa eu? Si tu pega eu ti ajudo cum o que for preciso pa sai&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="971936136973779" type="System">
+                                    <param id="0" name="Seconds">3</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="202719425986352" type="Player">
                                     <param id="0" name="Instance variable">ItemMissão</param>
@@ -626,6 +687,10 @@
                                 <action id="-9" name="Set value" sid="950828077151554" type="System">
                                     <param id="0" name="Variable">ItemObjetivo</param>
                                     <param id="1" name="Value">&quot;joias&quot;</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="643398161127120" type="System">
+                                    <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                                    <param id="1" name="State">1</param>
                                 </action>
                                 <action id="0" name="Set text" sid="286074062663959" type="Notifica">
                                     <param id="0" name="Text">&quot;Vá até a carroça para se dirigir a área do item que precisa ser recuperado&quot;</param>
@@ -661,8 +726,12 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-12" name="Set group active" sid="386212066950695" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action id="0" name="Set text" sid="769732113455342" type="MsgINFO">
-                            <param id="0" name="Text">&quot;Vamos então patrão!&quot;</param>
+                            <param id="0" name="Text">&quot;Simbora intão chefia!&quot;</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="121679224282456" type="System">
                             <param id="0" name="Layer">2</param>
@@ -674,6 +743,10 @@
                         <action id="-4" name="Set layer visible" sid="335647848023275" type="System">
                             <param id="0" name="Layer">2</param>
                             <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="663075830555416" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
                         </action>
                         <action id="-25" name="Go to layout (by name)" sid="695626478480064" type="System">
                             <param id="0" name="Layout">ItemObjetivo</param>
@@ -847,6 +920,88 @@
         </event-group>
         <event-group description="" sid="366557113114961" title="Sistema">
             <sub-events>
+                <event-block sid="338618084237871">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="380989813622775" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="678439744254036" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Value">LayoutName</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="138366020734733">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="277590384594879" type="System" />
+                        <condition id="-14" name="Compare variable" sid="332969669864267" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Start Menu&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="415584774657725" type="Audio" />
+                        <action id="-16" name="Wait" sid="750730188614649" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="299422045203544" type="Audio">
+                            <param id="0" name="Audio file">457191_Barnyard_Ball__c_ilidh_sty</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="898824574981751">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="230491531165011" type="System" />
+                        <condition id="-14" name="Compare variable" sid="128167949819813" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cidade&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="475354520493768" type="Audio" />
+                        <action id="-16" name="Wait" sid="598337763699086" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="214855662215793" type="Audio">
+                            <param id="0" name="Audio file">457191_Barnyard_Ball__c_ilidh_sty</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-15</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="124256336905850">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="824995779038808" type="System" />
+                        <condition id="-14" inverted="1" name="Compare variable" sid="946377121264187" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Start Menu&quot;</param>
+                        </condition>
+                        <condition id="-14" inverted="1" name="Compare variable" sid="919586117339951" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Cidade&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="708292250103952" type="Audio" />
+                        <action id="-16" name="Wait" sid="824429572550855" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="587947318880944" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby_-_3</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-20</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="747775345899246">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="409706240024469" type="System" />
@@ -870,5 +1025,435 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="971385462600292" title="Dialogos cidadãos">
+            <sub-events>
+                <event-block sid="310610536824648">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="665100525779470" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="461553123468232" type="Player">
+                            <param id="0" name="Object">Ales</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="200764179572794" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="220674020806446" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="554127457746145" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Ocê sempre foi um bom fio...&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="804236378442795" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="480129966045374" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="321119338349794" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="732800550627624" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="115573703924687">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="916763583430323" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="278621154738543" type="Player">
+                            <param id="0" name="Object">Lyara</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="121551585587498" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="437982228055453" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="296829006125446" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Fedidos, tudo homi fedido&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="430429322307470" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="754236039434087" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="828548211255396" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="192974329808319" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="646092419869426">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="635034159290220" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="831115830774900" type="Player">
+                            <param id="0" name="Object">Lyara</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="872638293790614" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="474618993575290" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="705093756027741" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Fedidos, tudo homi fedido&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="791270283501154" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="571181681587274" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="671585927414262" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="727463409228228" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="151462473008692">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="237927874579542" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="488967464926934" type="Player">
+                            <param id="0" name="Object">Adélia</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="172817008318695" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="553088104172640" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="983432810513794" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Saia de minha frente minino&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="409230339092425" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="518967748482636" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="534153921355360" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="938478698318320" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="228076500582054">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="766219115349933" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="869769042439972" type="Player">
+                            <param id="0" name="Object">Adélia</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="838067752129984" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="114279543483894" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="637077467485233" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Saia de minha frente minino&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="184998131833005" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="901602576652738" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="769074854580704" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="507223341854566" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="783015940003386">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="910171651132365" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="388664729480951" type="Player">
+                            <param id="0" name="Object">Xerife</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="960625729094090" type="System">
+                            <param id="0" name="Variable">ItemObjetivo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;bagulho&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="435323188715930" type="System">
+                            <param id="0" name="Variable">EventosCompletos</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="298223592797914" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="519699593062713" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Bão dia.&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="624704640027929" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="524405222908661" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="599085080374338" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="365730000093392" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="246734548822391">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="447252499154964" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="1" name="Is overlapping another object" sid="556642036727491" type="Player">
+                            <param id="0" name="Object">Carroça</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="909727884428516" type="System">
+                            <param id="0" name="Variable">ItemObjetivo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;bagulho&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="670081502391003" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="832887842072683" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Num quero pega a carroça&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="380485633567048" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="493443012028852" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="486560965598835" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="786476693385362" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="370689737272489" title="Tutorial">
+            <sub-events>
+                <event-block sid="208823679095544">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="159833527695167" type="System" />
+                        <condition id="-14" name="Compare variable" sid="600551265492779" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;carta&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="366963815909465" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="403919740166977" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Dê lasca, ondi me meti...&#x0D;&#x0A;Ah esses dai! Tão tudo roncando, vo da a vôrta e tenta não passa por eles…&#x0D;&#x0A;Se vê abre um buraco nos meu zói&quot;&#x0D;&#x0A;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="904677392674401" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="673595903962708" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="267000805943012" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="245730140737800" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="883144850218800" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Value">&quot;Start Menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970543883859349">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="219956930265685" type="System" />
+                        <condition id="-14" name="Compare variable" sid="954255175624368" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fotos&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="397638190088519" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="576656656603945" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Ih, cheiro de defundo so, deve se do meu...&#x0D;&#x0A;Esses ai dão medo, mas são tudo uns cagão estão tudo juntinho, oh lá&#x0D;&#x0A;Tarves se eu passa correndo de novo, longe desses dai&#x0D;&#x0A;Se sonharem que me viu abre um buraco em mim na certa&quot;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="147749948740940" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="856107725901957" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="829863478224472" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="962728756687524" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="625429716084317" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Value">&quot;Start Menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="988784498364865">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="982589426613550" type="System" />
+                        <condition id="-14" name="Compare variable" sid="155513331039098" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;relogio&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="145026702685501" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="872058811548551" type="MsgINFO">
+                            <param id="0" name="Text">&quot;Mizeravi!&#x0D;&#x0A;Esses dai ao menos n vai abrir buraco im mim...&#x0D;&#x0A;Vai me perseguir e esfolar minha carne, mamãe porque me deixastes?&quot;&#x0D;&#x0A;</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="565616369155620" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="574792544994792" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="189730599003717" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="483948149703744" type="System">
+                            <param id="0" name="Group name">&quot;Movimentação&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="292623545305688" type="System">
+                            <param id="0" name="Variable">layatual</param>
+                            <param id="1" name="Value">&quot;Start Menu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="715389823236335">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="467159447290391" type="Player">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="525170459375793" type="System">
+                    <param id="0" name="Variable">EventosCompletos</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="737916979122905" type="System">
+                    <param id="0" name="Layout">Historia Final</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="754100483664724">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="383859369376863" type="Keyboard">
+                    <param id="0" name="Key">76</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="981723100114810" type="System">
+                    <param id="0" name="Variable">EventosCompletos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HistoriaFinal</name>
+    <events>
+        <event-block sid="789363693722721">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="954347233634382" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="458595452970384" type="Audio" />
+                <action id="-16" name="Wait" sid="817835508025718" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Play" sid="999478243862264" type="Audio">
+                    <param id="0" name="Audio file">457191_Barnyard_Ball__c_ilidh_sty</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="992307922866999" type="TextoHistoria">
+                    <param id="0" name="Text">&quot;agora num posso sai daqui... Mai num sei se devo. Existe tantos comu eu&#x0D;&#x0A;Qui quer melhora di vida&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="143537345958363" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="0" name="Set text" sid="584035894413744" type="TextoHistoria">
+                    <param id="0" name="Text">&quot;E tambiem tantos qtos eles, qui ficam sozin, pra trás torcendo pela alegria dos que foram&#x0D;&#x0A;Quem sabe meu lugar seja aqui&#x0D;&#x0A;Cuidano dos que ficaram&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="653192652051858" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="971717232405907" type="System">
+                    <param id="0" name="Layout">Start Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

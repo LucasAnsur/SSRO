@@ -10,6 +10,7 @@
     <unique-id>10uskvqfzcz5q</unique-id>
     <saved-with-version>27900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -27,7 +28,9 @@
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="grayscale">Grayscale</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -37,6 +40,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Historia</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -172,25 +176,102 @@
                     <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
                 </animation>
                 <animation framecount="1" loop="0" name="carta" pingpong="0" repeatcount="1" repeatto="0" sid="343605762529317" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="0.449275" hotspotY="0.486842" original-source="C:\Users\Lucas\Desktop\carta.png">
+                        <collision-poly>
+                            <point x="0.057971" y="0.131579" />
+                            <point x="0.449275" y="0.0394737" />
+                            <point x="0.753623" y="0.210526" />
+                            <point x="0.797101" y="0.486842" />
+                            <point x="0.797101" y="0.802632" />
+                            <point x="0.449275" y="0.894737" />
+                            <point x="0.130435" y="0.776316" />
+                            <point x="0.0434783" y="0.486842" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="fotos" pingpong="0" repeatcount="1" repeatto="0" sid="228378673752207" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="1.26154" hotspotY="0.87013" original-source="C:\Users\Lucas\Desktop\album.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.285714" />
+                            <point x="0.461538" y="0.116883" />
+                            <point x="0.923077" y="0.116883" />
+                            <point x="0.907692" y="0.506494" />
+                            <point x="0.784615" y="0.779221" />
+                            <point x="0.461538" y="0.922078" />
+                            <point x="0.0461538" y="0.857143" />
+                            <point x="0.107692" y="0.506494" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="relogio" pingpong="0" repeatcount="1" repeatto="0" sid="397835402945196" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="1.1125" hotspotY="0.859155" original-source="C:\Users\Lucas\Desktop\anel.png">
+                        <collision-poly>
+                            <point x="0.1625" y="0.126761" />
+                            <point x="0.4625" y="0.028169" />
+                            <point x="0.7375" y="0.15493" />
+                            <point x="0.9375" y="0.464789" />
+                            <point x="0.875" y="0.929577" />
+                            <point x="0.4625" y="0.957747" />
+                            <point x="0.1625" y="0.802817" />
+                            <point x="0.025" y="0.464789" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="chapeu" pingpong="0" repeatcount="1" repeatto="0" sid="254705266338330" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="1.25352" hotspotY="0.913043" original-source="C:\Users\Lucas\Desktop\chapeu.png">
+                        <collision-poly>
+                            <point x="0.239437" y="0.217391" />
+                            <point x="0.521127" y="0.0289855" />
+                            <point x="0.816901" y="0.202899" />
+                            <point x="0.901408" y="0.507246" />
+                            <point x="0.647887" y="0.637681" />
+                            <point x="0.521127" y="0.652174" />
+                            <point x="0.15493" y="0.884058" />
+                            <point x="0.126761" y="0.507246" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="botoes" pingpong="0" repeatcount="1" repeatto="0" sid="468101296386972" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="1.14103" hotspotY="0.866667" original-source="C:\Users\Lucas\Desktop\caixa_botoes.png">
+                        <collision-poly>
+                            <point x="0.179487" y="0.186667" />
+                            <point x="0.474359" y="0.0266667" />
+                            <point x="0.51282" y="0.453333" />
+                            <point x="0.794872" y="0.493333" />
+                            <point x="0.820513" y="0.853333" />
+                            <point x="0.474359" y="0.96" />
+                            <point x="0.166667" y="0.813333" />
+                            <point x="0.0384615" y="0.493333" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="novelo" pingpong="0" repeatcount="1" repeatto="0" sid="302408002269901" speed="5">
-                    <frame duration="1" hotspotX="1.02128" hotspotY="0.78" />
+                    <frame duration="1" hotspotX="1.02" hotspotY="0.78" original-source="C:\Users\Lucas\Desktop\saco_novelos.png">
+                        <collision-poly>
+                            <point x="0.31" y="0.31" />
+                            <point x="0.5" y="0.14" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.67" y="0.5" />
+                            <point x="0.79" y="0.79" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.23" y="0.77" />
+                            <point x="0.34" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="joias" pingpong="0" repeatcount="1" repeatto="0" sid="477095856921750" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.487805" hotspotY="0.5125" original-source="C:\Users\Lucas\Desktop\joias.png">
+                        <collision-poly>
+                            <point x="0.109756" y="0.125" />
+                            <point x="0.487805" y="0.025" />
+                            <point x="0.853659" y="0.1375" />
+                            <point x="0.987805" y="0.5125" />
+                            <point x="0.817073" y="0.85" />
+                            <point x="0.487805" y="0.95" />
+                            <point x="0.170732" y="0.8375" />
+                            <point x="0.0243902" y="0.5125" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -205,7 +286,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Transeunte" sid="452842582979012">
+        <object-type name="Ales" sid="452842582979012">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="missão" sid="521323369962718" type="boolean" />
@@ -231,7 +312,15 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="160775931053248" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.50032" hotspotY="0.500409" original-source="C:\Users\Lucas\Desktop\LargeBackground.png">
+                        <collision-poly>
+                            <point x="0.0409994" y="0.0524161" />
+                            <point x="0.49968" y="0.025389" />
+                            <point x="0.959641" y="0.0515971" />
+                            <point x="0.94811" y="0.933661" />
+                            <point x="0.0518898" y="0.933661" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -270,7 +359,7 @@
         <object-type name="TextoMorte" sid="708293976408583">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Civil" sid="612272687530866">
+        <object-type name="Adélia" sid="612272687530866">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453519027201292" speed="5">
@@ -278,7 +367,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Cidadão" sid="613281349537297">
+        <object-type name="Lyara" sid="613281349537297">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502552894371636" speed="5">
@@ -624,6 +713,55 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="FundoMenu" sid="302159429222828">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433900179271739" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lucas\Desktop\42465.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="933346512347956">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Textobtnstart" sid="910897652155016">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="914401756967768">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="fundoHistoria" sid="606048073461060">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Grayscale">
+                    <effect id="grayscale" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826179272876056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lucas\Desktop\520356-PJIKQ1-40.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoHistoria" sid="162159298832560">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite2" sid="470343910252504">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="564904472637167" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="621533408153825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991583714088024" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Paredes" plugin-id="Sprite" sid="148150697291125">
@@ -668,16 +806,41 @@
         <layout>botoes.xml</layout>
         <layout>novelo.xml</layout>
         <layout>joias.xml</layout>
+        <layout>Historia.xml</layout>
+        <layout>Historia Final.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Variaveis.xml</event-sheet>
+        <event-sheet>MENUHISTORIA.xml</event-sheet>
+        <event-sheet>HistoriaFinal.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Audio" uid="323">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="GameOver1.m4a" />
+        <file name="GameOver1.ogg" />
+        <file name="Tiro.m4a" />
+        <file name="Tiro.ogg" />
+        <file name="MattOglseby_-_3.ogg" />
+        <file name="457191_Barnyard_Ball__c_ilidh_sty.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

@@ -29,22 +29,24 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BG" uid="21">
+                <instance type="FundoMenu" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-41</x>
-                        <y>-20</y>
+                        <x>477</x>
+                        <y>129</y>
                         <z>0</z>
-                        <width>1846</width>
-                        <height>1078</height>
+                        <width>1130</width>
+                        <height>790</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -78,11 +80,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>395</x>
-                        <y>300</y>
+                        <x>413.999969482</x>
+                        <y>369.994262695</y>
                         <z>0</z>
-                        <width>319</width>
-                        <height>85</height>
+                        <width>365</width>
+                        <height>140</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500320315</hotspotX>
+                        <hotspotY>0.500409484</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Textobtnstart" uid="322">
+                    <properties>
+                        <text>INICIAR</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Britannic Bold,-37,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>411</x>
+                        <y>366</y>
+                        <z>0</z>
+                        <width>281</width>
+                        <height>77</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

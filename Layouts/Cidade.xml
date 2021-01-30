@@ -128,7 +128,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Transeunte" uid="14">
+                <instance type="Ales" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -197,7 +197,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cidadão" uid="26">
+                <instance type="Lyara" uid="26">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -219,7 +219,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Civil" uid="25">
+                <instance type="Adélia" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -538,7 +538,7 @@
                     <properties>
                         <text>ITEM ENCONTRADO</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16,400,0</font>
+                        <font>Britannic Bold,-27,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -549,11 +549,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>30</x>
-                        <y>31</y>
+                        <x>3</x>
+                        <y>308</y>
                         <z>0</z>
-                        <width>351</width>
-                        <height>112</height>
+                        <width>850</width>
+                        <height>170</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MENUHISTORIA</name>
+    <events>
+        <event-block sid="799289664105161">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="295956995611636" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="929047123736897" type="TextoHistoria">
+                    <param id="0" name="Text">&quot;Mainha se foi, num tenhu mais o que faze nessas terra&#x0D;&#x0A;Vou me ir pa&apos; uma cidade maió, ante num podia pa&apos; num deixa mainha só&#x0D;&#x0A;Mai agora sinto qui num tem mai espaço pa&apos; eu...&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="926119102671162" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="368592035567484" type="System">
+                    <param id="0" name="Layout">Start Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
