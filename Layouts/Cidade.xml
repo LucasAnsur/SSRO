@@ -144,11 +144,11 @@
                         <x>323</x>
                         <y>455</y>
                         <z>0</z>
-                        <width>118</width>
-                        <height>140</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.413793117</hotspotX>
+                        <hotspotY>0.525490224</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -163,14 +163,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>813</x>
-                        <y>493.5</y>
+                        <x>856</x>
+                        <y>502</y>
                         <z>0</z>
-                        <width>190</width>
-                        <height>277</height>
+                        <width>120</width>
+                        <height>225</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.466981143</hotspotX>
+                        <hotspotY>0.499631554</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -188,11 +188,11 @@
                         <x>1641</x>
                         <y>477</y>
                         <z>0</z>
-                        <width>143</width>
-                        <height>141</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.555118084</hotspotX>
+                        <hotspotY>0.498203605</hotspotY>
                         <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
@@ -210,11 +210,11 @@
                         <x>1079.5</x>
                         <y>246.5</y>
                         <z>0</z>
-                        <width>107</width>
-                        <height>141</height>
+                        <width>81.788909912</width>
+                        <height>44.01574707</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.451443583</hotspotX>
+                        <hotspotY>0.343470484</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -232,11 +232,11 @@
                         <x>516</x>
                         <y>807.5</y>
                         <z>0</z>
-                        <width>114</width>
-                        <height>148</height>
+                        <width>60</width>
+                        <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.524173021</hotspotX>
+                        <hotspotY>0.675718844</hotspotY>
                         <angle>-1.57079649</angle>
                         <opacity>1</opacity>
                     </world>
@@ -472,7 +472,7 @@
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
+                                <set-angle>No</set-angle>
                                 <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -487,8 +487,8 @@
                         <width>60</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>1.016666651</hotspotX>
-                        <hotspotY>0.466666669</hotspotY>
+                        <hotspotX>0.607476652</hotspotX>
+                        <hotspotY>0.55898875</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -584,7 +584,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,400,0</font>
+                        <font>Britannic Bold,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>

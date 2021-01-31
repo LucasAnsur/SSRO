@@ -96,7 +96,7 @@
                                 <acceleration>600</acceleration>
                                 <deceleration>500</deceleration>
                                 <directions>8 directions</directions>
-                                <set-angle>360 degree (smooth)</set-angle>
+                                <set-angle>No</set-angle>
                                 <default-controls>No</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -111,8 +111,8 @@
                         <width>60</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>1.016666651</hotspotX>
-                        <hotspotY>0.466666669</hotspotY>
+                        <hotspotX>0.607476652</hotspotX>
+                        <hotspotY>0.55898875</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -704,11 +704,11 @@
                         <x>503</x>
                         <y>225</y>
                         <z>0</z>
-                        <width>62</width>
-                        <height>63</height>
+                        <width>80</width>
+                        <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0.967741907</hotspotX>
-                        <hotspotY>0.492063493</hotspotY>
+                        <hotspotX>0.983240247</hotspotX>
+                        <hotspotY>0.961741447</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -749,11 +749,11 @@
                         <x>1025</x>
                         <y>400</y>
                         <z>0</z>
-                        <width>62</width>
-                        <height>63</height>
+                        <width>80</width>
+                        <height>80</height>
                         <depth>0</depth>
-                        <hotspotX>0.967741907</hotspotX>
-                        <hotspotY>0.492063493</hotspotY>
+                        <hotspotX>0.983240247</hotspotX>
+                        <hotspotY>0.961741447</hotspotY>
                         <angle>-1.57079649</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1304,7 +1304,7 @@
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,400,0</font>
+                        <font>Britannic Bold,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1331,7 +1331,7 @@
                     <properties>
                         <text>ITEM ENCONTRADO</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16,400,0</font>
+                        <font>Britannic Bold,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -1417,7 +1417,7 @@
                     <properties>
                         <text>VOCÊ MORREU</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Bernard MT Condensed,-96,400,0</font>
+                        <font>Britannic Bold,-96,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>

@@ -5,7 +5,7 @@
     <events>
         <event-group description="" sid="977751196566202" title="Movimentação">
             <sub-events>
-                <event-block sid="247799473519617">
+                <event-block disabled="1" sid="247799473519617">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="629964739919281" type="System" />
                     </conditions>

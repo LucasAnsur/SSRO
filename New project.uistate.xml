@@ -10,12 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Historia Final</layout>
-        <layout order="4">joias</layout>
-        <layout order="5">Start Menu</layout>
-        <event-sheet order="1">MENUHISTORIA</event-sheet>
-        <event-sheet order="2">Event sheet 1</event-sheet>
-        <event-sheet active="1" order="3">HistoriaFinal</event-sheet>
+        <layout order="1">relogio</layout>
+        <layout active="1" order="2">Cidade</layout>
+        <layout order="3">carta</layout>
+        <event-sheet order="0">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,7 +21,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="1" name="Paredes" />
         <family expanded="1" name="Inimigos" />
         <family expanded="0" name="ItensMapa" />
